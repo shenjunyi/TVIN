@@ -22,15 +22,15 @@ Monitor training progress in tensorboard by changing parameter config.log to Tru
 
 #### Other parameters:
 
-* lr: Learning rate for RMSProp.
-* epochs: Maximum epochs to train for. Default: 30
-* k: Number of value iterations. Recommended: [10 for 8x8, 20 for 16x16]
-* ch_i: Channels in input layer. Default: 2, i.e. obstacles image and goal image.
-* ch_h: Channels in initial hidden layer (~ reward function)
-* ch_q1: Transfer channels in q layer (~ transfer actions) in TVIN-module.
-* ch_q1: New channels in q layer (~new actions) in TVIN-module. 
-* batchsize: Batch size. 
-* statebatchsize: Number of state inputs for each sample.
+* ```lr```: Learning rate for RMSProp.
+* ```epochs```: Maximum epochs to train for. Default: 30
+* ```k```: Number of value iterations. Recommended: [10 for 8x8, 20 for 16x16]
+* ```ch_i```: Channels in input layer. Default: 2, i.e. obstacles image and goal image.
+* ```ch_h```: Channels in initial hidden layer (~ reward function)
+* ```ch_q1```: Transfer channels in q layer (~ transfer actions) in TVIN-module.
+* ```ch_q2```: New channels in q layer (~new actions) in TVIN-module. 
+* ```batchsize```: Batch size. 
+* ```statebatchsize```: Number of state inputs for each sample.
 
 ## Performance
 ![](https://github.com/shenjunyi/Transfer-VIN/blob/master/TVIN/ex2_2.jpg)
