@@ -11,9 +11,9 @@ Alternatively, you can use the existing data files in the data folder ```data/gr
 * SciPy >= 0.18.1 
 * Numpy >= 1.12.1
 ## Traning
-#### Pre-trained Model
+### Pre-trained Model
 Pre-trained 8\*8 Grid-world VIN model is saved in ```result``` directory, you can just restore the existing model in this folder.
-#### Target 16\*16 Grid-world domain
+### Target 16\*16 Grid-world domain
 Train the TVIN for 16\*16 grid-world domain with parameters
 ```
 python3 a8_train.py --lr 0.001 --epochs 30 --k 20 --batch_size 12
