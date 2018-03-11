@@ -14,16 +14,23 @@ Alternatively, you can use the existing data files in the data folder ```data/gr
 #### Pre-trained Model
 Pre-trained 8\*8 Grid-world VIN model is saved in ```result``` directory, you can just restore the existing model in this folder.
 #### Target 16\*16 Grid-world domain
-Flags:
+Train the TVIN for 16\*16 grid-world domain with parameters
+```
+python3 a8_train.py --lr 0.001 --epochs 30 --k 20 --batch_size 12
+```
+Monitor training progress in tensorboard by changing parameter config.log to True and launch ```tensorboard --logdir /tmp/vin/```. The log directory can be defined by yourself.<br>
 
-* datafile: The path to the data files.
-* imsize: The size of input images. One of: [8, 16, 28]
-* lr: Learning rate with RMSProp optimizer. Recommended: [0.01, 0.005, 0.002, 0.001]
-* epochs: Number of epochs to train. Default: 30
-* k: Number of Value Iterations. Recommended: [10 for 8x8, 20 for 16x16, 36 for 28x28]
-* l_i: Number of channels in input layer. Default: 2, i.e. obstacles image and goal image.
-* l_h: Number of channels in first convolutional layer. Default: 150, described in paper.
-* l_q: Number of channels in q layer (~actions) in VI-module. Default: 10, described in paper.
-* batch_size: Batch size. Default: 128
+#### Other parameters:
+
+* lr: Learning rate for RMSProp.
+* epochs: Maximum epochs to train for. Default: 30
+* k: Number of value iterations. Recommended: [10 for 8x8, 20 for 16x16]
+* ch_i: Channels in input layer. Default: 2, i.e. obstacles image and goal image.
+* ch_h: Channels in initial hidden layer (~ reward function)
+* ch_q1: Transfer channels in q layer (~ transfer actions) in TVIN-module.
+* ch_q1: New channels in q layer (~new actions) in TVIN-module. 
+* batchsize: Batch size. 
+* statebatchsize: Number of state inputs for each sample.
 
 ## Performance
+![](https://github.com/shenjunyi/Transfer-VIN/blob/master/TVIN/ex2_2.jpg)
