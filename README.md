@@ -1,5 +1,6 @@
 # Transfer Value Iteration Networks in Tensorflow
-Transfer-learning in VIN
+Framwork of Transfer Value Iteration Networks
+![](https://github.com/shenjunyi/Transfer-VIN/blob/master/TVIN/tvin.jpg)
 ## Datasets
 Generate the training data for target domain. Run the [Grid-world-Generator](https://github.com/shenjunyi/Grid-world-Generator) to get any grid-world training data you want, and training the different TVIN models.
  
