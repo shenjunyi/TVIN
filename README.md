@@ -23,9 +23,9 @@ Monitor training progress in tensorboard by changing parameter ```config.log``` 
 #### Other parameters:
 
 * ```lr```: Learning rate for RMSProp.
-* ```epochs```: Maximum epochs to train for. Default: 30
+* ```epochs```: Maximum epochs to train for.
 * ```k```: Number of value iterations. Recommended: [10 for 8x8, 20 for 16x16]
-* ```ch_i```: Channels in input layer. Default: 2, i.e. obstacles image and goal image.
+* ```ch_i```: Channels in input layer.
 * ```ch_h```: Channels in initial hidden layer (~ reward function)
 * ```ch_q1```: Transfer channels in q layer (~ transfer actions) in TVIN-module.
 * ```ch_q2```: New channels in q layer (~new actions) in TVIN-module. 
