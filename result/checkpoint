@@ -1,0 +1,2 @@
+model_checkpoint_path: "VIN8.ckpt"
+all_model_checkpoint_paths: "VIN8.ckpt"
