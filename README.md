@@ -10,7 +10,7 @@ Alternatively, you can use the existing data files in the data folder ```data/gr
 * TensorFlow >= 1.0
 * SciPy >= 0.18.1 
 * Numpy >= 1.12.1
-## Traning
+## Training
 ### Pre-trained Model
 Pre-trained 8\*8 Grid-world VIN model is saved in ```result``` directory, you can just restore the existing model in this folder.
 ### Target 16\*16 Grid-world domain
