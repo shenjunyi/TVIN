@@ -18,7 +18,7 @@ Train the TVIN for 16\*16 grid-world domain with parameters
 ```
 python3 a8_train.py --lr 0.001 --epochs 30 --k 20 --batch_size 12
 ```
-Monitor training progress in tensorboard by changing parameter config.log to True and launch ```tensorboard --logdir /tmp/vin/```. The log directory can be defined by yourself.<br>
+Monitor training progress in tensorboard by changing parameter ```config.log``` to ```True``` and launch ```tensorboard --logdir /tmp/vin/```. The log directory can be defined by yourself.<br>
 
 #### Other parameters:
 
